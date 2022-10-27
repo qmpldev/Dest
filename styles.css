@@ -437,7 +437,16 @@ footer .logo{
 #barimg5{
     background-image: url(./assets/capetown.jpg);
 }
-
+.contactinfo p a{
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.contactinfo p a:hover{
+    color: #b0b0b0;
+    transition: 0.3s;
+}
 @media only screen and (max-width: 1190px) {
     .zdjeciamain .bar{
         background: rgba( 255, 255, 255, 0.25 );
