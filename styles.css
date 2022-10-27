@@ -334,6 +334,11 @@ main{
     background-repeat: no-repeat;
     transition: 0.3s;
 }
+.galeria .img11:hover, .img22:hover, .img33:hover, .img44:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
 
 .galeria .img11{
     background-image: url(./assets/img11.jpg);
@@ -377,25 +382,79 @@ footer .logo{
 }
 
 .zdjeciamain{
-    background-image: url(./assets/hotel.jpg);
+    background-image: url(./assets/tky2.jpg);
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     margin: 30px 8vw;
     padding: 5vw;
-    justify-content: space-between;
+    justify-content: center;
     color: white;
+    transition: 0.3s;
+}
+.zdjeciamain .bar{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+.zdjeciamain .bar > .barimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 120px;
+    transition: 0.2s;
+    background-size: cover;
 }
 
-.zdjeciamain > svg{
-    width: 20px;
-    fill: white;
-}
-.zdjeciamain > svg:hover{
+.zdjeciamain .bar > .barimg:hover{
+    transform: scale(1.05);
     cursor: pointer;
+    transition: 0.2s;
 }
+#barimg1{
+    background-image: url(./assets/tky2.jpg);
+}
+#barimg2{
+    background-image: url(./assets/favelas.jpg);
+}
+#barimg3{
+    background-image: url(./assets/sf.jpg);
+}
+#barimg4{
+    background-image: url(./assets/wwa.jpg);
+}
+#barimg5{
+    background-image: url(./assets/capetown.jpg);
+}
+
+@media only screen and (max-width: 1190px) {
+    .zdjeciamain .bar{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 30px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 50%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
     .form{
@@ -433,5 +492,19 @@ footer .logo{
     }
     .hamburger-menu{
         display: contents;
+    }
+    .zdjeciamain .bar{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 30px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
     }
 }
