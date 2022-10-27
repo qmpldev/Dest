@@ -73,6 +73,9 @@ const test = `
     font-weight: 700;
     width: calc(100% - 50px);
 `
+
+//Zdarzenia onclick
+
 formbtn.onclick = () =>{
     LogFormData()
 }
@@ -82,11 +85,7 @@ startbutton.onclick = () =>{
     Step2()
 }
 
-async function getData(countryAPI){
-    const response = await fetch(countryAPI)
-    const data = await response.json()
-    useData(data)
-}
+//Funkcje
 
 function Step2(){
     mainForm.innerHTML = "<input type=\"text\" id=\"inputcity\" placeholder=\"Podaj państwo:\" autocomplete=\"off\">"
@@ -109,6 +108,12 @@ function Step2(){
 function Step3(a){
     const countryAPI = 'https://restcountries.com/v3.1/name/' + a
     getData(countryAPI)
+}
+
+async function getData(countryAPI){
+    const response = await fetch(countryAPI)
+    const data = await response.json()
+    useData(data)
 }
 
 function useData(data){
