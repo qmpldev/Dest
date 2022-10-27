@@ -135,11 +135,11 @@ header .list > p{
     color: rgb(47, 47, 47);
   }
 
-/*/Hamburger MENU*/
+/*/Hamburger MENU - Alvaro*/
 
 
 main{
-    background-image: url(./assets/tlo.jpg);
+    background-image: url(./assets/favelas.jpg);
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -374,6 +374,27 @@ footer .sm{
 footer .logo{
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+.zdjeciamain{
+    background-image: url(./assets/hotel.jpg);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 30px 8vw;
+    padding: 5vw;
+    justify-content: space-between;
+    color: white;
+}
+
+.zdjeciamain > svg{
+    width: 20px;
+    fill: white;
+}
+.zdjeciamain > svg:hover{
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
