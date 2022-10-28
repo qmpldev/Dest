@@ -184,3 +184,4 @@ function LogFormData(){
     `)
     document.getElementById("formularz").reset()
 }
+
