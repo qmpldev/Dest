@@ -5,15 +5,10 @@ Aby skorzystać z aplikacji wystarczy wpisać nazwę państwa (po angielsku) i k
 
 # Statystyki projektu (linie kodu)
 
-JS- 181<br>
-HTML - 170<br>
-CSS - 320<br>
-~25 000 znaków
-
-# Hamburger Menu
-
-Rozwijane menu (Hamburger) w wersji mobilnej zostało stworzone przez Álvaro, skorzystałem z jego kodu i dostosowałem do potrzeb strony.
-Projekt -> https://codepen.io/alvarotrigo/pen/yLzaPVJ
+JS- 186<br>
+HTML - 281<br>
+CSS - 440<br>
+~30 000 znaków
 
 # Ikony
 
